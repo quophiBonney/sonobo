@@ -1,0 +1,46 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.home-hero {
+  background: lightgreen;
+  width: 100%;
+  height: 40vh;
+  background-attachment: fixed;
+}
+.main-text {
+  font-size: 2em;
+}
+.form-container {
+  height: auto;
+  margin-top: 20px;
+  border: 2px solid rgba(0, 0, 0,  0.3);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.btn-calculate {
+  background: lightgreen!important;
+  border: 0!important;
+}
+@media screen and (max-width: 768px) {
+  .home-hero {
+    height: 60vh;
+  }
+  .main-text {
+    font-size: 1.2em;
+  }
+  .form-container {
+    margin-top: -20px;
+    height: auto;
+  }
+}
