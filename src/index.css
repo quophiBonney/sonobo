@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -11,15 +12,31 @@ body {
   width: 100vw;
   overflow-x: hidden;
   overflow-y: visible;
+  background: lavender;
 }
 .home-hero {
-  background: lightgreen;
+  background: teal;
   width: 100%;
-  height: 40vh;
+  height: 75vh;
   background-attachment: fixed;
 }
+.img {
+  height: 300px!important;
+}
 .main-text {
-  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  margin-top: 70px;
+  font-weight: 800;
+}
+h2, h3, h4 {
+  font-size: 1.4em!important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800!important;
+}
+p {
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
 }
 .form-container {
   height: auto;
@@ -28,13 +45,29 @@ body {
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
+.description {
+  font-size: 16px;
+  font-weight: 600;
+}
+.charge-container {
+  border: 3px solid teal;
+  border-radius: 5px;
+}
 .btn-calculate {
-  background: lightgreen!important;
+  background: teal!important;
   border: 0!important;
+  color: #fff!important;
+  
+}
+.btn-calculate:hover {
+  color: #fff;
+  opacity: 0.7;
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 @media screen and (max-width: 768px) {
   .home-hero {
-    height: 60vh;
+    height: 70vh;
   }
   .main-text {
     font-size: 1.2em;
@@ -42,5 +75,8 @@ body {
   .form-container {
     margin-top: -20px;
     height: auto;
+  }
+  #sec-column {
+    display: none;
   }
 }

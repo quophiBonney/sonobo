@@ -1,11 +1,10 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import {Typewriter, Cursor} from "react-simple-typewriter";
-import svg from "./../assets/images/cheap.png";
-import "./../index.css";
-const Hero = () => {
+import app from "./../assets/images/client1.png";
+const Banner = () => {
   const text = Typewriter({
-    words: ["Momo", "E-levy"],
+    words: ["apple app store", "google play store"],
     loop: {},
     typeSpeed: 120,
   });
@@ -15,13 +14,11 @@ const Hero = () => {
         <Row className="justify-content-center">
           <Col sm={12} md={6} lg={6} className="mb-5 mt-5">
             <h1 className="text-uppercase main-text text-light">
-              {text}
-              <Cursor />
-              &nbsp; charges on your withdrawals
+              Sonobo App will be released on soon....
             </h1>
             <p className="text-light">
-              Your days of not knowing the charges on your mobile money
-              withdrawals are over.
+              The app will be available on the {text}
+              <Cursor />
             </p>
           </Col>
           <Col
@@ -32,9 +29,9 @@ const Hero = () => {
             id="sec-column"
           >
             <img
-              src={svg}
+              src={app}
               alt=""
-              className="img-fluid img-responsive mt-3 img"
+              className="img-fluid img-responsive mt-5 img"
             />
           </Col>
         </Row>
@@ -43,4 +40,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Banner;
