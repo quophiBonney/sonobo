@@ -28,13 +28,14 @@ const CalcForm = () => {
   const handleCalculate = () => {
     const calculatedElevyCharges = (withdrawalAmount * elevyCharges) / 100;
     const calculatedTelcoCharges = (withdrawalAmount * telcoCharges) / 100;
-
+    const allCharges = calculatedElevyCharges + calculatedTelcoCharges;
+    const decimalPlace = 2;
     if (network === "MTN" || network === "AirtelTigo") {
-      setTotalCharges(calculatedElevyCharges + calculatedTelcoCharges);
+      setTotalCharges(allCharges.toFixed(decimalPlace));
     } else if (network === "Vodafone") {
-      setTotalCharges(calculatedElevyCharges);
+      setTotalCharges(calculatedElevyCharges.toFixed(decimalPlace));
     } else if (network === "Glo") {
-      setTotalCharges(calculatedElevyCharges);
+      setTotalCharges(calculatedElevyCharges.toFixed(decimalPlace));
     } else {
       alert("Please choose a network operator");
     }
