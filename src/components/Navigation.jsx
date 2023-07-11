@@ -34,7 +34,7 @@ const Navigation = () => {
           >
             <span className="">
               <HiMenuAlt3
-                className="toggle-icon"
+                className="toggle-icon text-light"
                 style={{
                   width: "25px",
                   height: "25px",
@@ -45,8 +45,15 @@ const Navigation = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Link
+                to="/convertor"
+                className="btn btn-calculate m-2"
+                onClick={handleLinkClick}
+              >
+                Convert Currency
+              </Link>
+              <Link
                 to="/coming-soon"
-                className="btn btn-calculate"
+                className="btn btn-calculate m-2"
                 onClick={handleLinkClick}
               >
                 Coming Soon

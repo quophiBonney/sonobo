@@ -1,8 +1,9 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import appstore from "./../assets/images/appstore.png";
-import playstore from "./../assets/images/playstore.png";
-import logo from "./../assets/images/see.png";
+import appstore from "../../assets/images/appstore.png";
+import playstore from "../../assets/images/playstore.png";
+import logo from "../../assets/images/see.png";
+import "../../index.css";
 const AboutApp = () => {
   return (
     <>

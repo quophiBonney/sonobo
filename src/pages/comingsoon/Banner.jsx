@@ -1,7 +1,8 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import {Typewriter, Cursor} from "react-simple-typewriter";
-import app from "./../assets/images/client1.png";
+import app from "../../assets/images/client1.png";
+import "../../index.css";
 const Banner = () => {
   const text = Typewriter({
     words: ["apple app store", "google play store"],

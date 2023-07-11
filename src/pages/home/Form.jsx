@@ -74,7 +74,7 @@ const CalcForm = () => {
                   <div className="col-sm-12 col-md-6 col-lg-3 mt-3 mb-3">
                     <div className="shadow py-2 charge-container">
                       <h5 className="text-uppercase mt-2 text-dark text-center">
-                        Total Charges : {totalCharges}
+                        Total Charges : &#8373;{totalCharges}
                       </h5>
                     </div>
                   </div>
@@ -87,7 +87,7 @@ const CalcForm = () => {
                     className="py-3 shadow"
                     value={withdrawalAmount}
                     onChange={handleWithdrawalAmountChange}
-                    placeholder="110"
+                    placeholder="&#8373;110"
                   />
                   <small className="text-dark description">
                     Withdrawal Amount

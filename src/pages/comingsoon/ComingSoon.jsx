@@ -5,7 +5,7 @@ const ComingSoon = () => {
   return (
     <div className="container-fluid home-hero">
       <Banner />
-      <AboutApp/>
+      <AboutApp />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, Row, Container} from "react-bootstrap";
-import "./../index.css";
+import "../../index.css";
 const Card = () => {
   return (
     <>
