@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import {Container, Row, Col, Form, Button, Alert} from "react-bootstrap";
+import {Container, Row, Col, Form, Button} from "react-bootstrap";
 import Card from "./Card";
 
 const CalcForm = () => {
   const [withdrawalAmount, setWithdrawalAmount] = useState("");
   const [network, setNetwork] = useState("MTN");
   const [totalCharges, setTotalCharges] = useState(0);
-  const [elevyCharges, setElevyCharges] = useState(1.5);
+  const [elevyCharges, setElevyCharges] = useState(1);
   const [telcoCharges, setTelcoCharges] = useState(0.75);
   const [calculateClicked, setCalculateClicked] = useState(false);
 
